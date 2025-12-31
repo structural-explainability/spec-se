@@ -1,0 +1,42 @@
+schema = "se-manifest-1"
+
+[repo]
+name = "spec-se"
+org  = "structural-explainability"
+kind = "spec"
+status = "normative"
+since = "2025"
+summary = "Defines the admissible space for accountable representation under neutrality constraints."
+
+[layer]
+space = "SE"
+role  = "boundary"
+
+[depends]
+required = []
+optional = []
+
+[provides]
+artifacts = ["README.md", "SPEC.md", "IDENTIFIERS.md", "CONFORMANCE.md"]
+
+[scope]
+includes = [
+  "neutrality constraints",
+  "boundary conditions for admissible representation",
+  "rules for externalizing interpretation",
+]
+excludes = [
+  "domain semantics",
+  "epistemic truth criteria",
+  "causal models",
+  "normative judgment or enforcement",
+  "implementation details",
+]
+
+[citation]
+cff = "CITATION.cff"
+preferred = "spec"
+bib_hint = "spec-se-2025"
+
+[traceability]
+identifier_map = "none"

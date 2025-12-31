@@ -36,93 +36,102 @@ Identifiers are:
 - suitable for direct mapping to Lean theorem names
 
 Identifiers MUST NOT be renamed or repurposed.
-New identifiers MAY be added only in a new major version of SE.
+New identifiers MAY be added only in a new major version of this document.
+
+## Identifier Notes
+
+Each identifier MUST be followed by exactly one note.
+
+- The note MUST be expressed as a single bullet.
+- The bullet text MAY wrap across lines.
+- No additional bullets, sublists, or structural markers are permitted.
+- Notes are explanatory only and do not introduce additional requirements.
 
 ## Canonical Identifier List (Alphabetical, with Notes)
 
 SE.BOUNDARY.NON_OWNERSHIP
 
-Requires that the substrate does not resolve, privilege, or own epistemic,
+- Requires that the substrate does not resolve, privilege, or own epistemic,
 causal, or normative interpretations.
 
 SE.BOUNDARY.RESPONSIBILITY
 
-Requires that epistemic, causal, and normative responsibility reside outside
+- Requires that epistemic, causal, and normative responsibility reside outside
 the substrate.
 
 SE.CANONICAL.RULE
 
-Defines the separation of structural recording from external interpretation,
+- Defines the separation of structural recording from external interpretation,
 evaluation, and judgment.
 
 SE.CHANGE.DEPENDENCY
 
-Permits representation of structural dependency without causal explanation.
+- Permits representation of structural dependency without causal explanation.
 
 SE.CHANGE.NON_MUTATION
 
-Prohibits implicit mutation of prior state and requires structural traceability.
+- Prohibits implicit mutation of prior state and requires structural traceability.
 
 SE.CHANGE.STRUCTURED
 
-Requires change to be represented explicitly as a structured phenomenon.
+- Requires change to be represented explicitly as a structured phenomenon.
 
 SE.DEFINITION.CORE
 
-Defines Structural Explainability as a neutral representational property
+- Defines Structural Explainability as a neutral representational property
 enabling explanation by external frameworks.
 
 SE.IDENTITY.DISTINCT
 
-Requires entity identity to be distinct from state, version, or interpretation.
+- Requires entity identity to be distinct from state, version, or interpretation.
 
 SE.IDENTITY.EXPLICIT
 
-Requires identity conditions to be explicitly represented.
+- Requires identity conditions to be explicitly represented.
 
 SE.IDENTITY.PERSISTENCE
 
-Requires identity persistence rules to be explicit and structurally checkable.
+- Requires identity persistence rules to be explicit and structurally checkable.
 
 SE.NEUTRALITY.CAUSAL.ALLOWED
 
-Enumerates causal-related representations permitted without explanation.
+- Enumerates causal-related representations permitted without explanation.
 
 SE.NEUTRALITY.CAUSAL.PROHIBITED
 
-Prohibits assertion of causal mechanisms or production relations.
+- Prohibits assertion of causal mechanisms or production relations.
 
 SE.NEUTRALITY.EPISTEMIC.ALLOWED
 
-Enumerates epistemic-related representations permitted without judgment.
+- Enumerates epistemic-related representations permitted without judgment.
 
 SE.NEUTRALITY.EPISTEMIC.PROHIBITED
 
-Prohibits assertion of truth, validity, or evidentiary sufficiency.
+- Prohibits assertion of truth, validity, or evidentiary sufficiency.
 
 SE.NEUTRALITY.NORMATIVE.ALLOWED
 
-Enumerates normative-related representations permitted without authority.
+- Enumerates normative-related representations permitted without authority.
 
 SE.NEUTRALITY.NORMATIVE.PROHIBITED
 
-Prohibits encoding of obligations, permissions, enforcement, or evaluation.
+- Prohibits encoding of obligations, permissions, enforcement, or evaluation.
 
 SE.NON_GOALS.EXCLUDED
 
-Defines what Structural Explainability explicitly does not do.
+- Defines what Structural Explainability explicitly does not do.
 
 SE.TIME.EXPLICIT
 
-Requires temporal persistence to be explicitly represented.
+- Requires temporal persistence to be explicitly represented.
 
 SE.TIME.NON_DESTRUCTIVE
 
-Prohibits destructive overwrite of historical state.
+- Prohibits destructive overwrite of historical state.
 
 SE.TIME.NON_GLOBAL
 
-Prohibits assumption of a global time semantics.
+- Prohibits assumption of a global time semantics.
 
 ## Cross-Artifact Consistency Rule
 
@@ -130,7 +139,7 @@ Each identifier in this list MUST appear:
 
 - exactly once in SPEC.md
 - exactly once in CONFORMANCE.md
-- exactly once as a field in the Lean ConformanceEvidence structure
+- exactly once as a field in the Lean `ConformanceEvidence` structure
 - exactly once in the Lean requirements list
 
 Alphabetical order SHOULD be preserved across all artifacts.

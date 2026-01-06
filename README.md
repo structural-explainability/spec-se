@@ -1,7 +1,7 @@
 # Structural Explainability (SE)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/license/MIT)
-![Build Status](https://github.com/structural-explainability/spec-se/actions/workflows/ci.yml/badge.svg)
+![Build Status](https://github.com/structural-explainability/spec-se/actions/workflows/ci-hygiene.yml/badge.svg?branch=main)
 [![Check Links](https://github.com/structural-explainability/spec-se/actions/workflows/links.yml/badge.svg)](https://github.com/structural-explainability/spec-se/actions/workflows/links.yml)
 
 > Authoritative specification of Structural Explainability (SE).
@@ -65,8 +65,10 @@ No downstream specification may weaken or override SE constraints.
 ## Repository Contents
 
 - [SPEC.md](./SPEC.md) - Normative specification
+- [SPEC_LAYERS.md](./SPEC_LAYERS.md) - Canonical epistemic layer model and definitions
 - [IDENTIFIERS.md](./IDENTIFIERS.md) - Stable requirement identifiers
 - [CONFORMANCE.md](./CONFORMANCE.md) - Conformance checklist
+- [se-manifest-1.md](./manifests/se-manifest-1.md) - SE manifest schema and field definitions
 - [ANNOTATIONS.md](./ANNOTATIONS.md) - Annotation standards
 - [LICENSE](./LICENSE) - licensing terms
 - [CITATION.cff](./CITATION.cff) - Citation metadata
@@ -85,3 +87,24 @@ By separating structure from interpretation, SE ensures that:
 - accountability is preserved under persistent disagreement.
 
 SE enables explanation without becoming explanatory.
+
+## Developer (running pre-commit)
+
+Steps to run pre-commit locally. Install `uv`.
+
+Initialize once:
+
+```shell
+uv self update
+uvx pre-commit install
+uvx pre-commit run --all-files
+```
+
+Save progress as needed:
+
+```shell
+git add -A
+# If pre-commit makes changes, re-run `git add -A` before committing.
+git commit -m "update"
+git push -u origin main
+```

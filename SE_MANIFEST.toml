@@ -1,33 +1,42 @@
 # ============================================================
-# SE_MANIFEST.toml (Repository Intent, Scope, and Role)
+# SE_MANIFEST.toml (Repository Declaration)
 # ============================================================
 
-schema = "se-manifest-1"
-schema_url = "https://github.com/structural-explainability/spec-se/blob/main/manifests/se-manifest-1.md"
+schema = "se-manifest-schema"
+schema_version = "0.5.0"
+schema_url = "https://raw.githubusercontent.com/structural-explainability/se-manifest-schema/main/manifest-schema.toml"
+
+# === Framework Context ===
 
 [meta]
-# Non-normative contextual information
 framework = "Structural Explainability"
 framework_url = "https://github.com/structural-explainability"
-framework_note = "Provides definitions and conventions for SE_MANIFEST semantics."
-description = "Declarative claim of repository intent, scope, and role."
-purpose = "To make explicit the boundaries, responsibilities, and expectations of this repository relative to others."
+purpose = "Declares this repository's role in the Structural Explainability ecosystem."
 
-[repo]
+# === Repository Identity ===
+
+[repository]
+organization = "structural-explainability"
 name = "spec-se"
-org  = "structural-explainability"
-kind = "spec"
-status = "normative"
+class = "specification"
+kind = "specification"
+status = "active"
 since = "2025"
-summary = "Defines the admissible space for accountable representation under neutrality constraints."
+summary = "Defines the Structural Explainability specification."
+
+# === Layer Position ===
 
 [layer]
-space = "SE"
-role  = "boundary"
+space = "structural-explainability"
+role = "specification"
+
+# === Dependency Declarations ===
 
 [depends]
 required = []
 optional = []
+
+# === Provided Artifacts ===
 
 [provides]
 artifacts = [
@@ -43,24 +52,27 @@ artifacts = [
   "LICENSE",
 ]
 
+# === Scope ===
+
 [scope]
 includes = [
-  "neutrality constraints",
-  "boundary conditions for admissible representation",
-  "rules for externalizing interpretation",
+  "Structural Explainability specification material",
+  "core specification terminology",
+  "specification-level constraints and definitions",
 ]
 excludes = [
-  "domain semantics",
-  "epistemic truth criteria",
-  "causal models",
-  "normative judgment or enforcement",
-  "implementation details",
+  "implementation code",
+  "formal proof artifacts",
+  "machine-readable contract exports",
 ]
+
+# === Citation ===
 
 [citation]
 cff = "CITATION.cff"
-preferred = "spec"
-bib_hint = "case2025-spec-se"
+preferred = "Cite this repository using CITATION.cff."
+
+# === Traceability ===
 
 [traceability]
-identifier_map = "structural-explainability/spec-se/IDENTIFIERS.md"
+identifier_map = "SE_MANIFEST.toml"

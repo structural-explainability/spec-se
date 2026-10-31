@@ -1,5 +1,8 @@
 # Structural Explainability Specification (SE)
 
+> **Archived.**
+> **Retired and no longer authoritative. See README.md.**
+
 Status: Normative
 
 This document defines the normative constraints for conformance with

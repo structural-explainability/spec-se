@@ -1,6 +1,10 @@
 # Structural Explainability Layer Model (SPEC_LAYERS)
 
-- Status: Normative
+> **Archived.**
+> **Retired and no longer authoritative. See README.md.**
+
+Status: Normative
+
 - Applies to: Structural Explainability specifications, formalizations, and implementations
 - Audience: Humans (reviewers, maintainers, instructors); machines by reference
 - Purpose: Define the canonical epistemic layer taxonomy used by SE-governed repositories

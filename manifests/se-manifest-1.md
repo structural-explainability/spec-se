@@ -1,6 +1,10 @@
 # SE Manifest Specification (se-manifest-1)
 
-- Status: Normative
+> **Archived.**
+> **Retired and no longer authoritative. See README.md.**
+
+Status: Normative
+
 - Layer: Specification
 - Applies to: Repositories declaring Structural Explainability alignment
 - Schema Identifier: `se-manifest-1`

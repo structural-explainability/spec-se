@@ -1,4 +1,26 @@
-# Structural Explainability (SE)
+# ARCHIVED: Retired Research
+
+> **Status:** Retired October 2026. No longer maintained.
+>
+> This repository belongs to an earlier stage of the Structural Explainability
+> research program.
+> It informed the current research, which no longer builds on it.
+>
+> Its specifications, classifications, and conformance requirements
+> **no longer authoritative** and do not reflect current Structural
+> Explainability requirements.
+>
+> It is preserved unchanged for historical reference, and
+> so any existing citations and links remain valid.
+> No further development is planned, and
+> no replacement specification is intended.
+>
+> For current research, see
+> [Structural Explainability](https://github.com/structural-explainability).
+
+---
+
+## Structural Explainability (SE)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/license/MIT)
 ![Build Status](https://github.com/structural-explainability/spec-se/actions/workflows/ci-md.yml/badge.svg?branch=main)
